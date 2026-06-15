@@ -9,9 +9,10 @@ st.set_page_config(page_title="ITSMTicket Counter", layout="wide")
 st.title("ITSM Ticket Counter")
 st.markdown("Upload multiple Excel files to count tickets for selected customers.")
 
+
 # ---------- TARGET CUSTOMERS ----------
 target_customers = [
-    "Georgia Pacific",
+    "Georgia Pacific","Georgia-Pacific", "Georgia",
     "Victaulic",
     "Sandvik",
     "Wittur",
@@ -117,7 +118,7 @@ if page == "📤 Upload":
             try:
                 xls = pd.ExcelFile(file)
 
-                # 🔍 Look for a sheet that contains "Customer"
+                # Look for a sheet that contains "Customer"
                 selected_sheet = None
 
                 for sheet in xls.sheet_names:
