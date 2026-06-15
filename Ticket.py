@@ -449,6 +449,7 @@ elif page == "📊 Dashboard":
             loc='upper left',
             fontsize=8
         )
+        #hhk
         plt.xticks(rotation=45)
         plt.tight_layout()
 
