@@ -29,9 +29,9 @@ if "page" not in st.session_state:
 
 # Load selected app
 if st.session_state.page == "itsm":
-    import PSTicket
-    itsm_app.run()
+    import Ticket
+    Ticket.run()
 
 elif st.session_state.page == "alert":
-    import Ticket
-    alert_app.run()
+    import PSTicket
+    PSTicket.run()
